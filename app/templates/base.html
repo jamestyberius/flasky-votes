@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    {% if title %}
+    <title>{{ title }} - FlaskyVotes</title>
+    {% else %}
+    <title>Welcome to FlaskyVotes</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>FlaskyVotes: <a href="/index">Home</a><div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+<html>
